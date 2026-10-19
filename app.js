@@ -207,13 +207,14 @@
   const imgCache = {};
 
   function loadPlantImg(p) {
-    if (!p.image) return null;
-    if (!imgCache[p.image]) {
+    const src = p.cutout || p.image;
+    if (!src) return null;
+    if (!imgCache[src]) {
       const i = new Image();
-      i.src = p.image;
-      imgCache[p.image] = i;
+      i.src = src;
+      imgCache[src] = i;
     }
-    return imgCache[p.image];
+    return imgCache[src];
   }
 
   function buildPalette() {
