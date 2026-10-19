@@ -268,7 +268,7 @@
       if (pimg && pimg.complete && pimg.naturalWidth) {
         ctx.drawImage(pimg, item.x - s / 2, item.y - s / 2, s, s);
       } else {
-        ctx.fillStyle = 'rgba(45,90,77,0.85)';
+        ctx.fillStyle = 'rgba(214,58,14,0.85)';
         ctx.beginPath();
         ctx.arc(item.x, item.y, s / 2, 0, Math.PI * 2);
         ctx.fill();
@@ -279,7 +279,7 @@
         ctx.fillText(p.name.split(' ')[0], item.x, item.y);
       }
       if (i === selectedIdx) {
-        ctx.strokeStyle = '#c86643';
+        ctx.strokeStyle = '#ff5a1f';
         ctx.lineWidth = 3;
         ctx.setLineDash([6, 4]);
         ctx.strokeRect(item.x - s / 2, item.y - s / 2, s, s);

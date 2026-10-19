@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I Ship My Plants | Premium Hawaiian Plants</title>
-  <meta name="description" content="Premium Hawaiian plants grown at FlashTown Farm and sourced from neighbors. Shipped with aloha.">
+  <title>Punahele Plant Market at FlashTown | I Ship My Plants</title>
+  <meta name="description" content="Punahele Plant Market at FlashTown — a virtual farmers market and plant outlet. Plants grown by neighbors across Eden Roc, Hawaiʻi.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a href="#top" class="brand">ishipmyplants</a>
+      <a href="#top" class="brand"><img src="img/logo-punahele.png" alt="Punahele Plant Market">Punahele</a>
       <nav class="nav">
+        <a href="#market">The Market</a>
         <a href="#store">Store</a>
         <a href="#identify">Plant ID</a>
         <a href="#yard">Yard Visualizer</a>
@@ -21,19 +22,37 @@
   </header>
 
   <section class="hero" id="top">
+    <img class="bg" src="img/nursery-market.jpg" alt="">
+    <div class="shade"></div>
+    <div class="wrap inner">
+      <p class="eyebrow">Punahele Plant Market · at FlashTown · Eden Roc, Hawaiʻi</p>
+      <h1>A <span class="grad">virtual farmers market</span> for plants, grown by the neighborhood.</h1>
+      <p class="lede">Tropical flowers, herbs, trees and fruit — grown by Rooster Island, Tropical Ts, Eden Nova and FlashTown, all here in Eden Roc. Plant ID and a yard visualizer are built in so you can see a plant in your space before you buy.</p>
+      <div class="cta-row">
+        <a href="#store" class="btn btn-lava">Shop plants</a>
+        <a href="#market" class="btn btn-ghost">Meet the growers</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="coop" id="market">
     <div class="wrap">
-      <p class="eyebrow">FlashTown Farm · Big Island, Hawaiʻi</p>
-      <h1>Premium Hawaiian plants, shipped with aloha.</h1>
-      <p class="lede">Tropical flowers, herbs, trees and fruit grown at FlashTown and sourced from neighbors. Plant ID and a yard visualizer are built in so you can see a plant in your space before you buy.</p>
-      <a href="#store" class="btn btn-accent">Shop plants</a>
+      <span class="coop-label">Grown by the neighborhood</span>
+      <div class="growers">
+        <span class="grower">Rooster Island</span>
+        <span class="grower">Tropical Ts</span>
+        <span class="grower">Eden Nova</span>
+        <span class="grower">FlashTown</span>
+      </div>
+      <p class="muted" style="width:100%;margin-top:.4rem">Punahele is a plant outlet run as a coop — every plant on this shelf was grown by a neighbor in Eden Roc.</p>
     </div>
   </section>
 
   <section id="store" class="section">
     <div class="wrap">
       <div class="section-head">
-        <h2>The catalog</h2>
-        <p id="resultCount"></p>
+        <h2>The market shelf</h2>
+        <p id="resultCount" class="muted"></p>
       </div>
       <div class="filters" id="filters"></div>
       <div class="grid" id="productGrid"></div>
@@ -57,7 +76,7 @@
       <h2>Yard Visualizer</h2>
       <p class="muted">Upload a photo of your yard or house. Pick a plant, click where it should go, drag to move it, and use the slider to resize it.</p>
       <div class="yard-tools">
-        <label class="btn btn-secondary">
+        <label class="btn btn-ghost">
           Upload a photo
           <input type="file" accept="image/*" id="yardInput" hidden>
         </label>
@@ -69,8 +88,8 @@
       </div>
       <div class="yard-controls" id="yardControls" hidden>
         <label>Size <input type="range" id="sizeSlider" min="40" max="400" value="160"></label>
-        <button class="btn btn-secondary" id="deleteBtn">Remove selected</button>
-        <button class="btn btn-secondary" id="clearBtn">Clear all</button>
+        <button class="btn btn-ghost" id="deleteBtn">Remove selected</button>
+        <button class="btn btn-ghost" id="clearBtn">Clear all</button>
       </div>
     </div>
   </section>
@@ -78,8 +97,8 @@
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <div>
-        <strong>ishipmyplants</strong>
-        <p>Made with aloha at FlashTown Farm.</p>
+        <strong>Punahele Plant Market at FlashTown</strong>
+        <p>A neighborhood plant coop in Eden Roc, Hawaiʻi.</p>
       </div>
       <p>© 2026 I Ship My Plants</p>
     </div>
@@ -97,7 +116,7 @@
     <div id="cartItems"></div>
     <div class="cart-foot">
       <p class="cart-total">Total: <strong id="cartTotal">$0</strong></p>
-      <button class="btn btn-accent" id="checkoutBtn" disabled>Checkout (coming soon)</button>
+      <button class="btn btn-lava" id="checkoutBtn" disabled>Checkout (coming soon)</button>
     </div>
   </aside>
 

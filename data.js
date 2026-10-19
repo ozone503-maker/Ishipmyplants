@@ -10,7 +10,7 @@ const plants = [
     water: 'High',
     sun: 'Partial',
     height: '1-2 ft',
-    image: 'img/mint.webp'
+    image: 'img/mint.jpg'
   },
   {
     id: 'guava-harvest',
@@ -27,8 +27,8 @@ const plants = [
   },
   {
     id: 'monstera-deliciosa',
-    name: 'Split-Leaf Philodendron',
-    scientific: 'Philodendron bipinnatifidum',
+    name: 'Monstera Deliciosa',
+    scientific: 'Monstera deliciosa',
     category: 'foliage',
     price: 48,
     description: 'Large split leaves, statement plant, naturally climbs.',
@@ -36,7 +36,7 @@ const plants = [
     water: 'Moderate',
     sun: 'Partial',
     height: '6-10 ft',
-    image: 'img/philodendron-split-leaf.jpg'
+    image: 'img/philodendron-hand.jpg'
   },
   {
     id: 'passion-flower',
@@ -75,7 +75,7 @@ const plants = [
     water: 'Moderate',
     sun: 'Full Sun',
     height: '4-8 ft',
-    image: 'img/hibiscus.webp'
+    image: 'img/hibiscus.jpg'
   },
   {
     id: 'papaya-tree',
@@ -140,7 +140,7 @@ const plants = [
     water: 'Varies',
     sun: 'Varies',
     height: 'Varies',
-    image: 'img/nursery.jpg'
+    image: 'img/nursery-market.jpg'
   },
   {
     id: 'orchid-dendrobium',
@@ -166,7 +166,7 @@ const plants = [
     water: 'Moderate',
     sun: 'Full Sun',
     height: 'Vine',
-    image: 'img/passion-fruit.webp'
+    image: 'img/passion-flower.jpg'
   }
 ];
 
@@ -175,6 +175,5 @@ const categories = [
   { value: 'tropical', label: 'Tropical Flowers' },
   { value: 'herbs', label: 'Herbs & Edibles' },
   { value: 'foliage', label: 'Foliage' },
-  { value: 'trees', label: 'Trees' },
-  { value: 'succulents', label: 'Succulents' }
+  { value: 'trees', label: 'Trees' }
 ];
